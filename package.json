@@ -5,9 +5,14 @@
   "author": "Pablo Vieira",
   "icon": "images/vi-ui.png",
   "version": "0.0.1",
+  "publisher": "vuetifyjs",
   "engines": {
     "vscode": "^1.33.0"
   },
+  "repository": {
+    "url": "https://github.com/pablovieiras/viui-vscode"
+  },
+  "homepage": "https://github.com/pablovieiras/viui-vscode",
   "keywords": [
     "vue",
     "vi-ui",
