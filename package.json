@@ -3,9 +3,9 @@
   "displayName": "viui-vscode",
   "description": "Vi-Ui VSCode Extension",
   "author": "Pablo Vieira",
-  "icon": "images/vi-ui.png",
+  "icon": "images/logo.png",
   "version": "0.0.1",
-  "publisher": "vuetifyjs",
+  "publisher": "pablovieiras",
   "engines": {
     "vscode": "^1.33.0"
   },
