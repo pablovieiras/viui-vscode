@@ -1,0 +1,46 @@
+{
+  "name": "viui-vscode",
+  "displayName": "viui-vscode",
+  "description": "Vi-Ui VSCode Extension",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "keywords": [
+    "vue",
+    "vi-ui",
+    "vi-ui-vscode",
+    "vi-ui autocomplete"
+  ],
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "vue",
+        "path": "./snippets/vi-ui.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/vi-ui.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/javascript.json"
+      }
+    ]
+  }
+}

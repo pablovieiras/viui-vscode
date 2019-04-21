@@ -1,0 +1,23 @@
+{
+  "Vi-Ui Import": {
+    "prefix": "ViUi",
+    "body": [
+      "import ViUi from 'vue-vi-ui';"
+    ],
+    "description": "Vi-Ui Import Snippet"
+  },
+  "Vi-Ui CSS Import": {
+    "prefix": "ViUiCSS",
+    "body": [
+      "import 'vue-vi-ui/dist/vi-ui.min.css';"
+    ],
+    "description": "Vi-Ui CSS Import Snippet"
+  },
+  "Vi-Ui Use Import": {
+    "prefix": "ViUiUse",
+    "body": [
+      "Vue.use(ViUi);"
+    ],
+    "description": "Vue Use Vi-Ui Snippet"
+  }
+}

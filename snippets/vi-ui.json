@@ -1,0 +1,662 @@
+{
+  "Vi-Ui Script Link": {
+    "prefix": "ViUiScript",
+    "body": [
+      "<script src=\"https://unpkg.com/vue-vi-ui/dist/vi-ui.min.js\"></script>"
+    ],
+    "description": "Vi-Ui Script Link Snippet"
+  },
+  "Vi-Ui Style Link": {
+    "prefix": "ViUiStyle",
+    "body": [
+      "<link rel=\"stylesheet\" href=\"https://unpkg.com/vue-vi-ui/dist/vi-ui.min.css\">"
+    ],
+    "description": "Vi-Ui Style Link Snippet"
+  },
+  "Vi-Ui Font Link": {
+    "prefix": "ViUiFont",
+    "body": [
+      "<link href=\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Source+Sans+Pro:400,400i,700,700i\" rel=\"stylesheet\">"
+    ],
+    "description": "Vi-Ui Font Link Snippet"
+  },
+  "ViAlert Component": {
+    "prefix": "vi-alert",
+    "body": [
+      "<vi-alert ${1|primary,secondary,success,info,warning,danger,dark,grey,light|} v-model=\"${4:value}\">$5</vi-alert>$0"
+    ],
+    "description": "Vi-Ui ViAlert Component"
+  },
+  "ViAlert Timeout": {
+    "prefix": "vi-alert-timeout",
+    "body": [
+      "<vi-alert ${1|primary,secondary,success,info,warning,danger,dark,grey,light|} timeout=\"${3:value}\" v-model=\"${4:value}\">$5</vi-alert>$0"
+    ],
+    "description": "Vi-Ui ViAlert Timeout Component"
+  },
+  "ViAlert Icon": {
+    "prefix": "vi-alert-icon",
+    "body": [
+      "<vi-alert ${1|primary,secondary,success,info,warning,danger,dark,grey,light|} icon=\"${3:value}\" v-model=\"${4:value}\">$5</vi-alert>$0"
+    ],
+    "description": "Vi-Ui ViAlert Icon Component"
+  },
+  "ViAlert Inline": {
+    "prefix": "vi-alert-inline",
+    "body": [
+      "<vi-alert ${1|primary,secondary,success,info,warning,danger,dark,grey,light|} inline v-model=\"${4:value}\">$5</vi-alert>$0"
+    ],
+    "description": "Vi-Ui ViAlert Inline Component"
+  },
+  "ViAlert Props": {
+    "prefix": "vi-alert-props",
+    "body": [
+      "${1|primary,secondary,success,info,warning,danger,dark,grey,light,inline,left,right,bottom,not-dismissable,pill,icon=\"String\",timeout=\"Number or String\",v-model=\"Boolean\"|}"
+    ],
+    "description": "Vi-Ui ViAlert Props List"
+  },
+  "ViAlert Events": {
+    "prefix": "vi-alert-events",
+    "body": [
+      "${1|@open=\"Function\",@close=\"Function\",@input=\"Function\",@click=\"Function\"|}"
+    ],
+    "description": "Vi-Ui ViAlert Events List"
+  },
+  "ViAlert Template Example": {
+    "prefix": "vi-alert-full-example",
+    "body": [
+      "<template>",
+      "\t<div class=\"ViComponent\">",
+      "\t\t<vi-button primary @click=\"isOpen = !isOpen\">Show alert</vi-button>",
+      "\t\t<vi-alert info pill left v-model=\"isOpen\" icon=\"exclamation\"> Message</vi-alert>",
+      "\t</div>",
+      "</template>",
+      "<script>",
+      "export default {",
+      "\tdata() {",
+      "\t\treturn {",
+      "\t\t\tisOpen: false,",
+      "\t\t};",
+      "\t},",
+      "};",
+      "</script>"
+    ]
+  },
+  "ViButton Component": {
+    "prefix": "vi-button",
+    "body": [
+      "<vi-button ${1|primary,secondary,success,info,warning,danger,dark,grey,light|} ${2|large,medium,small,mini|}>Click Here</vi-button>"
+    ],
+    "description": "Vi-Ui ViButton Component"
+  },
+  "ViButton Icon": {
+    "prefix": "vi-button-icon",
+    "body": [
+      "<vi-button ${1|primary,secondary,success,info,warning,danger,dark,grey,light|} icon=\"${2:value}\"/>"
+    ],
+    "description": "Vi-Ui ViButton Icon Component"
+  },
+  "ViButton Loading": {
+    "prefix": "vi-button-loading",
+    "body": [
+      "<vi-button ${1|primary,secondary,success,info,warning,danger,dark,grey,light|}><vi-loading light mini/></vi-button>"
+    ],
+    "description": "Vi-Ui ViButton Loading Component"
+  },
+  "ViButton Outlined": {
+    "prefix": "vi-button-outlined",
+    "body": [
+      "<vi-button ${1|primary,secondary,success,info,warning,danger,dark,grey,light|} outlined>Click Me</vi-button>"
+    ],
+    "description": "Vi-Ui ViButton Outlined Component"
+  },
+  "ViButton Props": {
+    "prefix": "vi-button-props",
+    "body": [
+      "${1|primary,secondary,success,info,warning,danger,dark,grey,light,outlined,active,pill,circle,inverted,icon=\"String\",title=\"String\",href=\"String\",tag=\"String\",justify-content=\"String\",align-items=\"String\"|}"
+    ],
+    "description": "Vi-Ui ViButton Props List"
+  },
+  "ViButton Events": {
+    "prefix": "vi-button-events",
+    "body": [
+      "${1|@click=\"Function\"|}"
+    ],
+    "description": "Vi-Ui ViAlert Events List"
+  },
+  "ViButtonGroup Component": {
+    "prefix": "vi-button-group",
+    "body": [
+      "<vi-button-group>",
+      "\t<vi-button>1</vi-button>",
+      "\t<vi-button>2</vi-button>",
+      "\t<vi-button>3</vi-button>",
+      "</vi-button-group>"
+    ],
+    "description": "Vi-Ui ViButtonGroup Component"
+  },
+  "ViButtonGroup Props": {
+    "prefix": "vi-button-group-props",
+    "body": [
+      "${1|pill,outlined,justify-content=\"String\",align-items=\"String\"|}"
+    ],
+    "description": "Vi-Ui ViButtonGroup Props List"
+  },
+  "ViCard Component": {
+    "prefix": "vi-card",
+    "body": [
+      "<vi-card",
+      "\ttitle=\"Card Title\"",
+      "\ttitle-size=\"1\"",
+      ">",  
+      "\t<div slot=\"body\">Body</div>",
+      "\t<div slot=\"footer\">Footer</div>",
+      "</vi-card>"
+    ],
+    "description": "Vi-Ui ViCard Component"
+  },
+  "ViCard Props": {
+    "prefix": "vi-card-props",
+    "body": [
+      "${1|primary,secondary,success,warning,danger,info,dark,grey,light,mini-spacing,small-spacing,large-spacing,no-spacing,title=\"String\",title-size=\"String or Number\",tag=\"String\"|}"
+    ],
+    "description": "Vi-Ui ViCard Props List"
+  },
+  "ViCard Slots": {
+    "prefix": "vi-card-slots",
+    "body": [
+      "${1|side,body,footer|}"
+    ],
+    "description": "Vi-Ui ViCard Slots List"
+  },
+  "ViIcon Component": {
+    "prefix": "vi-icon",
+    "body": [
+      "<vi-icon name=\"${1:value}\"/>"
+    ],
+    "description": "Vi-Ui ViIcon Component"
+  },
+  "ViIcon Icons": {
+    "prefix": "vi-icon-list",
+    "body": [
+      "${1|arrow,arrow-left,birthday-cake,box,calendar,calendar-thin,chat,chat-active,check,checklist,chevron-down,chevron-next,chevron-prev,chevron-small-down,clock,cross,danger-symbol,download,excel,exit,double-chevron-left,double-chevron-right,flag,heart-beats,interface,line-chart,list,mail,magnifying-glass,manager-panel,money,message,others,padlock,paper,time,people,person,card,exclamation,print,pen,plus,question,question-circle,refresh,document,rounded-minus,round-x,rounded-plus,rounded-money,search-file,settings,shopping-basket,stethoscope,trash,upload,user-add,write-document,vitta|}"
+    ],
+    "description": "Vi-Ui ViIcon Icons List"
+  },
+  "ViInput Component": {
+    "prefix": "vi-input",
+    "body": [
+      "<vi-input v-model=\"${1:value}\"/>$0"
+    ],
+    "description": "Vi-Ui ViInput Component"
+  },
+  "ViInput Suffix": {
+    "prefix": "vi-input-suffix",
+    "body": [
+      "<vi-input>",
+      "\t<template slot=\"suffix\">$1</template>",
+      "</vi-input>$0"
+    ],
+    "description": "Vi-Ui ViInput Suffix Component"
+  },
+  "ViInput Prefix": {
+    "prefix": "vi-input-prefix",
+    "body": [
+      "<vi-input>",
+      "\t<template slot=\"prefix\">$1</template>",
+      "</vi-input>$0"
+    ],
+    "description": "Vi-Ui ViInput Prefix Component"
+  },
+  "ViInput Props": {
+    "prefix": "vi-input-props",
+    "body": [
+      "${1|v-model=\"String or Number\",label=\"String\",instruction=\"String\",id=\"String\",name=\"String\",auto-focus,:auto-focus=\"Boolean\",read-only,:read-only=\"Boolean\",disabled,:disabled=\"Boolean\",required,:required=\"Boolean\",custom-error-msg=\"Object\",force-validation,:force-validation=\"Boolean\",multiple,:multiple=\"Boolean\",type=\"String\",auto-complete=\"String\",min=\"String or Number\",max=\"String or Number\",maxLength=\"String or Number\",minLength=\"String or Number\",pattern=\"String\",pattern=\"String\",pill,:pill=\"Boolean\",rows=\"String or Number\",placeholder=\"String\"|}"
+    ],
+    "description": "Vi-Ui ViInput Props List"
+  },
+  "ViInput Events": {
+    "prefix": "vi-input-events",
+    "body": [
+      "${1|invalid=\"Boolean\",input=\"String or Number or Object or Array\"|}"
+    ],
+    "description": "Vi-Ui ViInput Events List"
+  },
+  "ViForm Basic Example": {
+    "prefix": "vi-form-example",
+    "body": [
+      "<form class=\"ViComponent\">",
+      "\t<vi-wrapper",
+      "\t\tvertical",
+      "\t\ttag=\"fieldset\"",
+      "\t>",
+      "\t\t<vi-input",
+      "\t\t\tlabel=\"Input\"",
+      "\t\t\tv-model=\"${1:value}\"",
+      "\t\t/>",
+      "\t\t<vi-input",
+      "\t\t\tlabel=\"Textarea\"",
+      "\t\t\ttype=\"textarea\"",
+      "\t\t\trows=\"6\"",
+      "\t\t\tv-model=\"${2:value}\"",
+      "\t\t/>",
+      "\t</vi-wrapper>",
+      "\t<vi-wrapper",
+      "\t\tvertical",
+      "\t\ttag=\"fieldset\"",
+      "\t>",
+      "\t\t<vi-checkbox",
+      "\t\t\tradio",
+      "\t\t\tv-model=\"${3:value}\"",
+      "\t\t/>",
+      "\t</vi-wrapper>",
+      "</form>"
+    ],
+    "description": "Vi-Ui ViForm Basic Example Component"
+  },
+  "ViForm Validation Example": {
+    "prefix": "vi-form-validation",
+    "body": [
+      "<form",
+      "\t\t@submit.prevent=\"${1:validadeFunction}(\\$event.target.validity)\"",
+      "\t\t@invalid.capture=\"${1:validadeFunction}(\\$event.target.validity)\"",
+      "\t\tclass=\"ViComponent\"",
+      ">",
+      "\t<vi-wrapper",
+      "\t\tvertical",
+      "\t\ttag=\"fieldset\"",
+      "\t>",
+      "\t\t<vi-input",
+      "\t\t\tlabel=\"Email\"",
+      "\t\t\tinstruction=\"(Required)\"",
+      "\t\t\ttype=\"email\"",
+      "\t\t\tv-model=\"${2:value}\"",
+      "\t\t\trequired",
+      "\t\t\tauto-complete=\"email\"",
+      "\t\t\tplaceholder=\"example@gmail.com\"",
+      "\t\t/>",
+      "\t</vi-wrapper>",
+      "\t<vi-wrapper",
+      "\t\tjustify-content=\"left\"",
+      "\t>",
+      "\t\t<vi-button type=\"submit\" success>Try</vi-button>",
+      "\t</vi-wrapper>",
+      "</form>"
+    ],
+    "description": "Vi-Ui ViForm Validation Example Component"
+  },
+  "ViDatepicker Component": {
+    "prefix": "vi-datepicker",
+    "body": [
+      "<vi-datepicker v-model=\"${1:value}\"/>$0"
+    ],
+    "description": "Vi-Ui ViDatepicker Component"
+  },
+  "ViDatepicker Range Component": {
+    "prefix": "vi-datepicker-range",
+    "body": [
+      "<vi-datepicker ranged v-model=\"${1:value}\"/>$0"
+    ],
+    "description": "Vi-Ui ViDatepicker Range Component"
+  },
+  "ViDatepicker Initial Date Component": {
+    "prefix": "vi-datepicker-min",
+    "body": [
+      "<vi-datepicker min=\"${1:YYYY-MM-DD}\" v-model=\"${1:value}\"/>$0"
+    ],
+    "description": "Vi-Ui ViDatepicker Initial Date Component"
+  },
+  "ViDatepicker Props": {
+    "prefix": "vi-datepicker-props",
+    "body": [
+      "${1|v-model=\"Date or Object or Array\",label=\"String\",instruction=\"String\",id=\"String\",name=\"String\",auto-focus,:auto-focus=\"Boolean\",read-only,:read-only=\"Boolean\",disabled,:disabled=\"Boolean\",required,:required=\"Boolean\",custom-error-msg=\"Object\",force-validation,:force-validation=\"Boolean\",multiple,:multiple=\"Boolean\",auto-complete,auto-complete=\"String\",disabled-dates=\"Array or Date or Object\",min=\"Date\",max=\"Date\",ranged,:ranged=\"Boolean\",double-panel,:double-panel=\"Boolean\",placeholder=\"String\"|}"
+    ],
+    "description": "Vi-Ui ViDatepicker Props List"
+  },
+  "ViDatepicker Events": {
+    "prefix": "vi-datepicker-events",
+    "body": [
+      "${1|invalid=\"Boolean\",input=\"String or Number or Object or Array\"|}"
+    ],
+    "description": "Vi-Ui ViDatepicker Events List"
+  },
+  "ViInputFile Component": {
+    "prefix": "vi-input-file",
+    "body": [
+      "<vi-input-file v-model=\"${1:value}\"/>$0"
+    ],
+    "description": "Vi-Ui ViInputFile Component"
+  },
+  "ViInputFile Custom Component": {
+    "prefix": "vi-input-file-custom",
+    "body": [
+      "<vi-input-file",
+      "\tmultiple",
+      "\tempty-input=\"${1:No selected file}\"",
+      "\tfilled-input=\"${2:Total: ##NUMBER##}\"",
+      "\tlabel=\"${3:Add new file}\"",
+      "\tbutton-desciption=\"${4:Select new files}\"",
+      "/>"
+    ],
+    "description": "Vi-Ui ViInputFile Custom Component"
+  },
+  "ViInputFile Props": {
+    "prefix": "vi-input-file-props",
+    "body": [
+      "${1|v-model=\"String or Number\",label=\"String\",instruction=\"String\",id=\"String\",name=\"String\",auto-focus,:auto-focus=\"Boolean\",read-only,:read-only=\"Boolean\",disabled,:disabled=\"Boolean\",required,:required=\"Boolean\",custom-error-msg=\"Object\",force-validation,:force-validation=\"Boolean\",multiple,:multiple=\"Boolean\",auto-complete=\"String\",accept=\"String\",empty-input=\"String\",filled-input=\"String\",button-desciption=\"String\",placeholder=\"String\"|}"
+    ],
+    "description": "Vi-Ui ViInputFile Props List"
+  },
+  "ViInputFile Events": {
+    "prefix": "vi-input-file-events",
+    "body": [
+      "${1|invalid=\"Boolean\",input=\"File\"|}"
+    ],
+    "description": "Vi-Ui ViInputFile Events List"
+  },
+  "ViCheckbox Component": {
+    "prefix": "vi-checkbox",
+    "body": [
+      "<vi-checkbox label=\"${1:value}\" v-model=\"${2:value}\"/>$0"
+    ],
+    "description": "Vi-Ui ViCheckbox Component"
+  },
+  "ViCheckbox Radio Component": {
+    "prefix": "vi-checkbox-radio",
+    "body": [
+      "<vi-checkbox",
+      "\tradio",
+      "\tlabel=\"${1:value}\"",
+      "\t:checked=\"${2:value}\"",
+      "\t@input=\"${3:value}\"/>"
+    ],
+    "description": "Vi-Ui ViCheckbox Component"
+  },
+  "ViCheckbox Props": {
+    "prefix": "vi-checkbox-props",
+    "body": [
+      "${1|v-model=\"String or Number\",label=\"String\",instruction=\"String\",id=\"String\",name=\"String\",auto-focus,:auto-focus=\"Boolean\",read-only,:read-only=\"Boolean\",disabled,:disabled=\"Boolean\",required,:required=\"Boolean\",custom-error-msg=\"Object\",force-validation,:force-validation=\"Boolean\",multiple,:multiple=\"Boolean\",radio,:radio=\"Boolean\",checked,:checked=\"Boolean\",indeterminate,:indeterminate=\"Boolean\"|}"
+    ],
+    "description": "Vi-Ui ViCheckbox Props List"
+  },
+  "ViCheckbox Events": {
+    "prefix": "vi-checkbox-events",
+    "body": [
+      "${1|invalid=\"Boolean\",input=\"String or Number or Boolean\"|}"
+    ],
+    "description": "Vi-Ui ViCheckbox Events List"
+  },
+  "ViSelect Component": {
+    "prefix": "vi-select",
+    "body": [
+      "<vi-select",
+      "\tlabel=\"${1:value}\"",
+      "\tv-model=\"${2:value}\"",
+      "\t:options=\"${3:value}\"",
+      "/>$0"
+    ],
+    "description": "Vi-Ui ViSelect Component"
+  },
+  "ViSelect Multiple Component": {
+    "prefix": "vi-select",
+    "body": [
+      "<vi-select",
+      "\tcheckbox",
+      "\tlabel=\"${1:value}\"",
+      "\tv-model=\"${2:value}\"",
+      "\t:options=\"${3:value}\"",
+      "/>$0"
+    ],
+    "description": "Vi-Ui ViSelect Multiple Component"
+  },
+  "ViSelect Props": {
+    "prefix": "vi-select-props",
+    "body": [
+      "${1|v-model=\"String or Number or Object or Array\",option-label=\"String\",label=\"String\",pill,:pill=\"Boolean\",checkbox,:checkbox=\"Boolean\",check-all-label=\"String\",check-selection-label=\"String\",uncheck-all-label=\"String\",uncheck-selection-label=\"String\",select-closed-label=\"String\",select-label=\"String\",selected-label=\"String\",deselect-label=\"String\",placeholder=\"String\"|}"
+    ],
+    "description": "Vi-Ui ViSelect Props List"
+  },
+  "ViSelect Events": {
+    "prefix": "vi-select-events",
+    "body": [
+      "${1|invalid=\"Boolean\"|}"
+    ],
+    "description": "Vi-Ui ViSelect Events List"
+  },
+  "ViLoading Component": {
+    "prefix": "vi-loading",
+    "body": [
+      "<vi-loading ${1|mini,small,medium,large|}/>$0"
+    ],
+    "description": "Vi-Ui ViLoading Component"
+  },
+  "ViLoading Progress Component": {
+    "prefix": "vi-loading-progress",
+    "body": [
+      "<vi-loading ${1|primary,secondary,success,warning,danger,info,dark,grey,light|} percent-value=\"${2:value}\"/>$0"
+    ],
+    "description": "Vi-Ui ViLoading Progress Component"
+  },
+  "ViLoading Props": {
+    "prefix": "vi-loading-props",
+    "body": [
+      "${1|primary,secondary,success,warning,danger,info,dark,grey,light,mini,small,medium,large,percent-value=\"Number or String\"|}"
+    ],
+    "description": "Vi-Ui ViLoading Props List"
+  },
+  "ViModal Component": {
+    "prefix": "vi-modal",
+    "body": [
+      "<vi-modal ${1|mini,small,medium,large|} title=\"${2:title}\" title-size=\"${3:2}\">$0",
+      "\tOpened.",
+      "</vi-modal>"
+    ],
+    "description": "Vi-Ui ViModal Component"
+  },
+  "ViModal Props": {
+    "prefix": "vi-modal-props",
+    "body": [
+      "${1|v-model=\"Boolean\",primary,secondary,success,warning,danger,info,dark,grey,light,mini,small,medium,large,mini-spacing,small-spacing,large-spacing,no-spacing,not-dismissable,title=\"String\",title-size=\"Number or String\"|}"
+    ],
+    "description": "Vi-Ui ViModal Props List"
+  },
+  "ViModal Events": {
+    "prefix": "vi-modal-events",
+    "body": [
+      "${1|input=\"Boolean\"|}"
+    ],
+    "description": "Vi-Ui ViModal Events List"
+  },
+  "ViModal Slots": {
+    "prefix": "vi-modal-slots",
+    "body": [
+      "${1|side,close,body,footer|}"
+    ],
+    "description": "Vi-Ui ViModal Slots List"
+  },
+  "ViPagination Component": {
+    "prefix": "vi-pagination",
+    "body": [
+      "<vi-pagination",
+      "\tpill",
+      "\t:base-URL=\"${1:baseURL}\"",
+      "\t:total-pages=\"${2:totalPages}\"",
+      "\t:total-showed=\"${3:totalShowed}\"",
+      "\tv-model=\"${4:value}\"",
+      "/>$0"
+    ],
+    "description": "Vi-Ui ViPagination Component"
+  },
+  "ViPagination Dots Component": {
+    "prefix": "vi-pagination-dots",
+    "body": [
+      "<vi-pagination",
+      "\tdots",
+      "\t:base-URL=\"${1:baseURL}\"",
+      "\t:total-pages=\"${2:totalPages}\"",
+      "\t:total-showed=\"${3:totalShowed}\"",
+      "\t:value=\"${4:value}\"",
+      "/>$0"
+    ],
+    "description": "Vi-Ui ViPagination Dots Component"
+  },
+  "ViPagination Props": {
+    "prefix": "vi-pagination-props",
+    "body": [
+      "${1|v-model=\"Number\",primary,secondary,success,warning,danger,info,dark,grey,light,pill,dots,base-url=\"Object\",total-pages=\"Number\",total-showed=\"Number\"|}"
+    ],
+    "description": "Vi-Ui ViPagination Props List"
+  },
+  "ViPagination Events": {
+    "prefix": "vi-pagination-events",
+    "body": [
+      "${1|input=\"Boolean\"|}"
+    ],
+    "description": "Vi-Ui ViPagination Events List"
+  },
+  "ViTable Component": {
+    "prefix": "vi-table",
+    "body": [
+      "<vi-table",
+      "\thorizontal-bordered",
+      "\t:columns=\"${1:cols}\"",
+      "\t:items=\"${2:data}\">",
+      "\t<template slot-scope=\"{ item }\">",
+      "\t\t<td center>{{ item.id }}</td>",
+      "\t\t<td>{{ item.name }}</td>",
+      "\t</template>",
+      "</vi-table>$0"
+    ],
+    "description": "Vi-Ui ViTable Component"
+  },
+  "ViTable Checkbox Component": {
+    "prefix": "vi-table-checkbox",
+    "body": [
+      "<vi-table",
+      "\tcheckbox",
+      "\thorizontal-bordered",
+      "\t:columns=\"${1:cols}\"",
+      "\t:items=\"${2:data}\"",
+      "\t@select-all=\"data => getSelectedAll(data)\"",
+      "\t@select=\"data => getSelectedItem(data)\">",
+      "\t<template slot-scope=\"{ item }\">",
+      "\t\t<td center>{{ item.id }}</td>",
+      "\t\t<td>{{ item.name }}</td>",
+      "\t</template>",
+      "\t<template slot=\"tfoot\">",
+      "\t\t<td center>TOTAL</td>",
+      "\t\t<td colspan=\"2\">VALUE</td>",
+      "\t</template>",
+      "</vi-table>$0"
+    ],
+    "description": "Vi-Ui ViTable Checkbox Component"
+  },
+  "ViTable Props": {
+    "prefix": "vi-table-props",
+    "body": [
+      "${1|sorted-column,sorted-direction,striped,vertical-bordered,horizontal-bordered,checkbox,columns=\"Array\",items=\"Array\"|}"
+    ],
+    "description": "Vi-Ui ViTable Props List"
+  },
+  "ViTable Events": {
+    "prefix": "vi-table-events",
+    "body": [
+      "${1|select=\"Object\",select-all=\"Object\",sort=\"Object\"|}"
+    ],
+    "description": "Vi-Ui ViTable Events List"
+  },
+  "ViTable Slots": {
+    "prefix": "vi-table-slots",
+    "body": [
+      "${1|tFoot|}"
+    ],
+    "description": "Vi-Ui ViTable Slots List"
+  },
+  "ViTabs Component": {
+    "prefix": "vi-tabs",
+    "body": [
+      "<vi-tabs v-model=\"${1:tabs}\">",
+      "\t<vi-card :title-size=\"3\" tabid=\"tab1\" title=\"Tab 1\">",
+      "\t\tTab content",
+      "\t</vi-card>",
+      "\t<vi-card :title-size=\"3\" tabid=\"tab2\" title=\"Tab 2\">",
+      "\t\tTab content",
+      "\t</vi-card>",
+      "\t<vi-card :title-size=\"3\" tabid=\"tab3\" title=\"Tab 3\">",
+      "\t\tTab content",
+      "\t</vi-card>",
+      "</vi-tabs>$0"
+    ],
+    "description": "Vi-Ui ViTabs Component"
+  },
+  "ViTabs Props": {
+    "prefix": "vi-tabs-props",
+    "body": [
+      "${1|v-model=\"String\"|}"
+    ],
+    "description": "Vi-Ui ViTabs Props List"
+  },
+  "ViTooltip Component": {
+    "prefix": "vi-tooltip",
+    "body": [
+      "<vi-tooltip ${1|top,right,bottom,left|} hover ${2|mini,small,medium,large|} content=\"${3:message}\">",
+      "\t<span>Hover Me</span>",
+      "</vi-tooltip>$0"
+    ],
+    "description": "Vi-Ui ViTooltip Component"
+  },
+  "ViTooltip CLick Component": {
+    "prefix": "vi-tooltip-click",
+    "body": [
+      "<vi-tooltip ${1|top,right,bottom,left|} click close-on-click ${2|mini,small,medium,large|} content=\"${3:message}\">",
+      "\t<vi-button primary>Click Me</vi-button>",
+      "</vi-tooltip>$0"
+    ],
+    "description": "Vi-Ui ViTooltip Component"
+  },
+  "ViTooltip Props": {
+    "prefix": "vi-tooltip-props",
+    "body": [
+      "${1|top,right,bottom,left,mini,small,medium,large,hover,click,hide-arrow,show,close-on-click,content=\"String\",delay-to-close=\"Number or String\"|}"
+    ],
+    "description": "Vi-Ui ViTooltip Props List"
+  },
+  "ViWrapper Component": {
+    "prefix": "vi-wrapper",
+    "body": [
+      "<vi-wrapper small-spacing align-items=\"stretch\" class=\"ViComponent\">",
+      "\t<vi-wrapper small-spacing align-items=\"stretch\">",
+      "\t\t<vi-card dark>1</vi-card>",
+      "\t\t<vi-card dark>2</vi-card>",
+      "\t</vi-wrapper>",
+      "\t<vi-wrapper vertical small-spacing>",
+      "\t\t<vi-card dark>3</vi-card>",
+      "\t\t<vi-card dark>4</vi-card>",
+      "\t\t<vi-card dark>5</vi-card>",
+      "\t</vi-wrapper>",
+      "</vi-wrapper>$0"
+    ],
+    "description": "Vi-Ui ViWrapper Component"
+  },
+  "ViWrapper Grid Component": {
+    "prefix": "vi-wrapper-grid",
+    "body": [
+      "<vi-wrapper no-spacing align-items=\"stretch\" class=\"ViComponent\">",
+      "\t<vi-wrapper grid small-spacing align-items=\"stretch\">",
+      "\t\t<vi-card col=\"6\" info>1</vi-card>",
+      "\t\t<vi-card col=\"6\" order=\"1\" info>2</vi-card>",
+      "\t\t<vi-card col=\"6\" info>3</vi-card>",
+      "\t\t<vi-card col=\"6\" info>4</vi-card>",
+      "\t</vi-wrapper>",
+      "</vi-wrapper>$0"
+    ],
+    "description": "Vi-Ui ViWrapper Grid Component"
+  },
+  "ViWrapper Props": {
+    "prefix": "vi-wrapper-props",
+    "body": [
+      "${1|justify-content=\"String\",align-items=\"String\",mini-spacing,small-spacing,large-spacing,no-spacing,parent-spacing,grid,tag=\"String\",vertical,inverted,child-wrapper,child-tag=\"String\",no-wrap,col-mini=\"String\",col-small=\"String\",col=\"String\",col-large=\"String\",col-jumbo=\"String\",order-mini=\"String\",order-small=\"String\",order=\"String\",order-large=\"String\",order-jumbo=\"String\"|}"
+    ],
+    "description": "Vi-Ui ViWrapper Props List"
+  }
+}
