@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://vitta-health.github.io/Vi-Ui/"><img src="https://raw.githubusercontent.com/vitta-health/Vi-Ui/master/docs/layout/components/vi-ui.svg?sanitize=true" alt="Vi-Ui" width="200"></a>
+  <a href="https://vitta-health.github.io/Vi-Ui/"><img src="https://github.com/pablovieiras/viui-vscode/blob/master/images/logo.png?raw=true" alt="Vi-Ui" width="200"></a>
   <br>
   viui-vscode
   <br>
