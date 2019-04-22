@@ -21,7 +21,7 @@
 
 Vi-Ui is a simple but consistent user interface for Vue and `viui-vscode` extension provides snippets and autocomplete to use with Visual Code.
 
-![screenshot](https://github.com/pablovieiras/viui-vscode/blob/master/images/how-to-use.gif)
+![screenshot](https://github.com/pablovieiras/viui-vscode/blob/master/images/how-to-use.gif?raw=true)
 
 
 ## How To Install
