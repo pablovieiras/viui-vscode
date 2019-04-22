@@ -29,7 +29,7 @@ Vi-Ui is a simple but consistent user interface for Vue and `viui-vscode` extens
 Just search for `viui-vscode` in VS Code Extensions section or go to <a href="https://marketplace.visualstudio.com/items?itemName=pablovieiras.viui-vscode" target="_blank">Visual Studio Market Place</a> or install it with the following command:
 
 ````
-ext install viui.viui-vscode
+ext install pablovieiras.viui-vscode
 ````
 
 ## How To Use
