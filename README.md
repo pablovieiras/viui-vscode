@@ -26,7 +26,7 @@ Vi-Ui is a simple but consistent user interface for Vue and `viui-vscode` extens
 
 ## How To Install
 
-Just search for `viui-vscode` in VS Code Extensions section or go to <a href="https://vitta-health.github.io/Vi-Ui/" target="_blank">VS Code Market Place</a> or install it with the following command:
+Just search for `viui-vscode` in VS Code Extensions section or go to <a href="https://marketplace.visualstudio.com/items?itemName=pablovieiras.viui-vscode" target="_blank">Visual Studio Market Place</a> or install it with the following command:
 
 ````
 ext install viui.viui-vscode
@@ -57,11 +57,11 @@ vi-{component-name}-slots
 ## Future Ideas
 
 - Add component docs when hover it
-- Sintax highlighting
+- Syntax highlighting
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.1
 
 Initial release of `viui-vscode`
 
