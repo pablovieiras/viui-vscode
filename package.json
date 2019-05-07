@@ -4,10 +4,11 @@
   "description": "Vi-Ui VSCode Extension",
   "author": "Pablo Vieira",
   "icon": "images/logo.png",
-  "version": "0.0.2",
+  "license": "MIT",
+  "version": "0.0.3",
   "publisher": "pablovieiras",
   "engines": {
-    "vscode": "^1.33.0"
+    "vscode": "^1.5.0"
   },
   "repository": {
     "url": "https://github.com/pablovieiras/viui-vscode"
@@ -31,6 +32,10 @@
       {
         "language": "vue",
         "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/vi-ui.json"
       },
       {
         "language": "html",
