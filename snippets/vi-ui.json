@@ -23,7 +23,7 @@
   "ViAlert Component": {
     "prefix": "vi-alert",
     "body": [
-      "<vi-alert ${1|primary,secondary,success,info,warning,danger,dark,grey,light|} v-model=\"${4:value}\">$5</vi-alert>$0"
+      "<vi-alert ${1|primary,secondary,success,info,warning,danger,dark,grey,light|} v-model=\"${2:value}\">$3</vi-alert>$0"
     ],
     "description": "Vi-Ui ViAlert Component"
   },
@@ -81,6 +81,35 @@
       "};",
       "</script>"
     ]
+  },
+  "ViBadge Component": {
+    "prefix": "vi-badge",
+    "body": [
+      "<vi-badge ${1|primary,secondary,success,info,warning,danger,dark,grey,light|}>",
+      "\t<div slot=\"badge\">$2<div>",
+      "\t<vi-button primary>$3</vi-button>",
+      "</vi-badge>$0"
+    ],
+    "description": "Vi-Ui ViBadge Component"
+  },
+  "ViBadge Inline Component": {
+    "prefix": "vi-badge-inline",
+    "body": [
+      "<p>",
+      "\t<vi-badge ${1|primary,secondary,success,info,warning,danger,dark,grey,light|} inline>",
+      "\t\t<div slot=\"badge\">$2</div>",
+      "\t</vi-badge>",
+      "\t$3",
+      "</p>$0"
+    ],
+    "description": "Vi-Ui ViBadge Inline Component"
+  },
+  "ViBadge Props": {
+    "prefix": "vi-badge-props",
+    "body": [
+      "${1|primary,secondary,success,info,warning,danger,dark,grey,light,inline,pill,over,square,outlined,left,bottom,top,mini,small,large,v-model=\"Boolean\"|}"
+    ],
+    "description": "Vi-Ui ViBadge Props List"
   },
   "ViButton Component": {
     "prefix": "vi-button",
